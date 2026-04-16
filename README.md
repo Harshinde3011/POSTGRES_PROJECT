@@ -52,15 +52,6 @@ after that just go inside src folder and modify in config/config.json
 
   npx sequelize db:migrate (this command (from Sequelize CLI) will execute all pending migration files and create/update tables in your PostgreSQL database)
   ```
-
-- cammands in pgAdmin tool
-  `To see tables`
-  ```
-  SELECT tablename 
-  FROM pg_tables 
-  WHERE schemaname = 'public';
- ```
-
 - Some basics cammands of 
   ```
   psql -U postgres  -- connect to db
@@ -70,3 +61,10 @@ after that just go inside src folder and modify in config/config.json
   \d users    -- describe table
   SELECT * FROM users;
   ```
+- cammands in pgAdmin tool
+  `To see tables`
+  ```
+  SELECT tablename 
+  FROM pg_tables 
+  WHERE schemaname = 'public';
+ ```
