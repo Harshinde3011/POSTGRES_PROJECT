@@ -66,5 +66,5 @@ after that just go inside src folder and modify in config/config.json
   ```
   SELECT tablename 
   FROM pg_tables 
-  WHERE schemaname = 'public';
+  WHERE schemaname = 'public'
  ```
