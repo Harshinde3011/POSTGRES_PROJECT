@@ -61,11 +61,12 @@ after that just go inside src folder and modify in config/config.json
   WHERE schemaname = 'public';
  ```
 
-- `Some basics cammands`
-```
-\l          -- list databases
-\c mydb     -- connect to database
-\dt         -- list tables
-\d users    -- describe table
-SELECT * FROM users;
-```
+- Some basics cammands of 
+  ```
+  psql -U postgres  -- connect to db
+  \l          -- list databases
+  \c mydb     -- connect to database
+  \dt         -- list tables
+  \d users    -- describe table
+  SELECT * FROM users;
+  ```
