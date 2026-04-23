@@ -59,7 +59,8 @@ after that just go inside src folder and modify in config/config.json
   \c mydb     -- connect to database
   \dt         -- list tables
   \d users    -- describe table
-  SELECT * FROM users;
+  SELECT * FROM users
+  select * from INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Flights' AND TABLE_SCHEMA = 'public';
   ```
 - cammands in pgAdmin tool
   `To see tables`
@@ -68,3 +69,5 @@ after that just go inside src folder and modify in config/config.json
   FROM pg_tables 
   WHERE schemaname = 'public'
  ```
+
+`associate is a method where we define relationships between Sequelize models. It is automatically called after all models are initialized, so we can safely reference other models and set up associations like hasMany, belongsTo, etc.`
