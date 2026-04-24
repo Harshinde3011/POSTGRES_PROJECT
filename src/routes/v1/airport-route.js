@@ -7,16 +7,16 @@ const _router = Router();
 // api/v1/airport/add
 _router.post('/add', airportMiddleware.validateCreateAirport, airportController.addAirport)
 
-//api/v1/airplane/get
+//api/v1/airport/get
 _router.get('/get', airportController.getAllAirports);
 
-//api/v1/airplane/get/:_id
+//api/v1/airport/get/:_id
 _router.get('/get/:_id', airportController.getAirport);
 
-//api/v1/airplane/delete/:_id
+//api/v1/airport/delete/:_id
 _router.delete('/delete/:_id', airportController.deleteAirport);
 
-//api/v1/airplane/update/:_id
+//api/v1/airport/update/:_id
 _router.patch('/update/:_id', airportController.updateAirportData);
 
 export default _router;
