@@ -1,6 +1,6 @@
 import { Router } from "express";
 import airplaneController from "../../controller/airplane-controller.js";
-import AirplaneMiddlewares from "../../middleware/index.js";
+import AirplaneMiddlewares from "../../middleware/airplane-middleware.js";
 
 const _router = Router();
 

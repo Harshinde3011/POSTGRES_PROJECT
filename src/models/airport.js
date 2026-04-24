@@ -9,21 +9,24 @@ export default(sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
       this.belongsTo(models.City, {
         foreignKey: 'cityId',
         onDelete: 'CASCADE'
-      }),
+      });
 
       this.hasMany(models.Flight, {
+        as: 'arrivals',
         foreignKey: 'arrivalAirportId',
-        onDelete: 'CASECADE'
-      })
+        sourceKey: 'code',
+        onDelete: 'CASCADE'
+      });
 
       this.hasMany(models.Flight, {
+        as: 'departures',
         foreignKey: 'departureAirportId',
+        sourceKey: 'code',
         onDelete: 'CASCADE'
-      })
+      });
     }
   }
   Airport.init({

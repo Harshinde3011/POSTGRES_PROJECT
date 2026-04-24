@@ -1,8 +1,7 @@
 'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
+import { Model } from "sequelize";
+
+export default(sequelize, DataTypes) => {
   class Flight extends Model {
     /**
      * Helper method for defining associations.
@@ -10,18 +9,21 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
-      this.belongsTo(models.Aiplane, {
+      this.belongsTo(models.Airplane, {
         foreignKey: 'airplaneId'
-      }),
+      });
 
-      this.belongsTo(models.Airports, {
-        foreignKey: 'code'
-      }),
+      this.belongsTo(models.Airport, {
+        as: 'departureAirport',
+        foreignKey: 'departureAirportId',
+        targetKey: 'code'
+      });
 
-      this.belongsTo(models.Airports, {
-        foreignKey: 'code'
-      })
+      this.belongsTo(models.Airport, {
+        as: 'arrivalAirport',
+        foreignKey: 'arrivalAirportId',
+        targetKey: 'code'
+      });
     }
   }
   Flight.init({

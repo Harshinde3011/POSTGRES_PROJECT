@@ -11,3 +11,8 @@ undefined [undefined] error: error in CrudRepository.get
 undefined [undefined] error: error in CrudRepository.get
 undefined [undefined] error: error in CrudRepository.get
 undefined [undefined] error: error in CrudRepository.create
+undefined [undefined] error: [POST /api/v1/airport/add] 500 - reqBody.code.trim is not a function
+undefined [undefined] error: [POST /api/v1/airport/add] 500 - Airport is not defined
+undefined [undefined] error: [POST /api/v1/airport/add] 500 - db is not defined
+undefined [undefined] error: [POST /api/v1/airport/add] 500 - Airport.findOne is not a function
+undefined [undefined] error: [POST /api/v1/airport/add] 409 - Airport code already exists
