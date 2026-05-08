@@ -14,7 +14,9 @@ const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 
 // ❗ import JSON in ESM
-import configJson from '../config/config.json' assert { type: 'json' };
+const configJson = JSON.parse(
+  fs.readFileSync(new URL('../config/config.json', import.meta.url))
+);
 const config = configJson[env];
 
 const db = {};

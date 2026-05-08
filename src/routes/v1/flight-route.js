@@ -6,4 +6,7 @@ const _router = Router();
 // api/v1/flight/add
 _router.post('/add', flightMiddleware.validateCreateFlight, flightController.addFlight)
 
+// api/v1/flight/all-flights
+_router.get('/all-flights', flightController.getAllFlights)
+
 export default _router;
