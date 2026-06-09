@@ -16,3 +16,42 @@ undefined [undefined] error: [POST /api/v1/airport/add] 500 - Airport is not def
 undefined [undefined] error: [POST /api/v1/airport/add] 500 - db is not defined
 undefined [undefined] error: [POST /api/v1/airport/add] 500 - Airport.findOne is not a function
 undefined [undefined] error: [POST /api/v1/airport/add] 409 - Airport code already exists
+undefined [undefined] error: [POST /api/v1/airport/add] 400 - Invalid request body for airport
+undefined [undefined] error: [POST /api/v1/airport/update/2] 404 - Route /api/v1/airport/update/2 not found
+undefined [undefined] error: [POST /api/v1/flight/add] 404 - Route /api/v1/flight/add not found
+undefined [undefined] error: [POST /api/v1/flight/add] 500 - arrivalAirportId is not defined
+undefined [undefined] error: [POST /api/v1/flight/add] 500 - arrivalAirportId is not defined
+undefined [undefined] error: [POST /api/v1/flight/add] 500 - arrivalAirportId is not defined
+undefined [undefined] error: [POST /api/v1/flight/add] 500 - arrivalAirportId is not defined
+undefined [undefined] error: [POST /api/v1/flight/add] 500 - Database operation failed
+undefined [undefined] error: [POST /api/v1/flight/add] 409 - flight code already exists
+undefined [undefined] error: error in CrudRepository.create
+undefined [undefined] error: [POST /api/v1/flight/add] 500 - Database operation failed
+undefined [undefined] error: [POST /api/v1/flight/add] 400 - Invalid request body for flight
+undefined [undefined] error: [POST /api/v1/flight/add] 400 - Departure time should be less than arrival time
+undefined [undefined] error: [GET /api/v1/flight/all-flights] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 404 - Route /api/v1/flight/all-flights?trips=MUM-BEL not found
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BEL] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR] 500 - Error in fetching flights from flightService.getAllFlights
+undefined [undefined] error: [GET /api/v1/flight/all-flights?trips=MUM-BLR&price=200-550&travellers=20&travelDate=2026-04-23&sortBy=departureTime_ASC,price_DESC] 500 - Error in fetching flights from flightService.getAllFlights

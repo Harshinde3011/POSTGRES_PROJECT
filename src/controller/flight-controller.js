@@ -37,8 +37,6 @@ async function addFlight(req, res, next) {
 
 async function getAllFlights(req, res, next){
     try {
-        console.log("req: ", req.query);
-        
         const flights = await flightService.getAllFlights(req.query);
 
         return res.status(StatusCodes.OK).json(

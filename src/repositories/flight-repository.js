@@ -1,4 +1,5 @@
 import db from "../models/index.js"
+import { col, Sequelize,Op } from "sequelize";
 import CrudRepository from "./crud-repository.js"
 
 class FlightRepository extends CrudRepository{
@@ -6,10 +7,31 @@ class FlightRepository extends CrudRepository{
         super(db.Flight);
     }
 
-    getAllFlights(filter, sortFilter){
+    getAllFlights(filter, sortFilter) {
         const response = db.Flight.findAll({
             where: filter,
-            order: sortFilter
+            order: sortFilter,
+            include: [{
+                model: db.Airplane,
+                required: true
+            },
+            {
+                model: db.Airport,
+                required: true,
+                as: "departureAirport",
+                attributes: ['name', 'cityId'],
+                include: {
+                    model: db.City,
+                    attributes: ['name', 'cityCode']
+                }
+            },
+            {
+                model: db.Airport,
+                required: true,
+                as: "arrivalAirport",
+                attributes: ['name', 'cityId']
+            }
+            ]
         })
         return response;
     }
