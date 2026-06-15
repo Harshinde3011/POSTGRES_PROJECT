@@ -28,6 +28,7 @@ module.exports = {
       class: {
         type: Sequelize.ENUM,
         values: ['business', 'economy', 'premium-economy', 'first-class'],
+        default: 'economy',
         allowNull: false
       },
       createdAt: {

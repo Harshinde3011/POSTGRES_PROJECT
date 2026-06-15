@@ -26,7 +26,7 @@ Remove column
 `📁 seeders/`
 Stores seed files
 Used to insert dummy/initial data
-
+eg: `npx sequelize db:seed --seed 20260609094602-add-seats.cjs`
 Example:
 
 Add admin user
